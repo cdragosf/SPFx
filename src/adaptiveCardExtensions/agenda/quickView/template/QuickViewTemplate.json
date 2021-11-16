@@ -1,0 +1,151 @@
+{
+  "schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.3",
+  "body": [
+      {
+          "type": "Container",
+          "$data": "${events}",
+          "items": [
+              {
+                  "type": "ColumnSet",
+                  "columns": [
+                      {
+                          "type": "Column",
+                          "items": [
+                              {
+                                  "type": "TextBlock",
+                                  "size": "Default",
+                                  "text": "${subject}",
+                                  "wrap": true,
+                                  "weight": "Bolder"
+                              },
+                              {
+                                  "type": "ColumnSet",
+                                  "columns": [
+                                      {
+                                          "type": "Column",
+                                          "width": "auto",
+                                          "items": [
+                                              {
+                                                  "type": "Image",
+                                                  "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAchJREFUOE+NkrGLE0EUh99vJiHMFoJa+A8cWKqVqBwINt41gtcIgthc5xVBsjsLYiZC2CWYwjYEOeXq4w5UsLMQrM7yKltBUAgouGFN5smG3ZA7Z0ymnPfme/O990CeE8fxNWvtLhGtEdGREOJhkiTHvny4AlrrNWZ+z8wvABwQ0Q4R3ZxMJhv9fv+H640PtGWtbSqlNjudzs9ms3mu0WgcAIiSJPm0MiiKog0ieiaE2EyS5HsYhhcB7AN4kKbp0cqgdrt9ZjweHxLRBQCfmXmdiD4opbaNMfnKoCLRGBNkWfaIiDQzPwmCYOiDFPnOHlUV4zi+Op1Oh/V6/Xa32/3qm9g/IK31WSllUD3I8/yKEOI5gPtSym/Vfa1W+1UMYRE8/1HRlyzL3gG48b/KZWx/NBrdGwwGf6rcOajQsNa+BHAnTdMvRYJLrdVqXRZCvAZwt8o7oRZF0VMiurRYyQUqh3DIzHu9Xu/ViR+V437LzMPFoK/ZWuvHzHx9sehMzaXlUyvuXXozkEurBJ231t5SSr0xxvyuNFx68Gktm9xpPfi0loFO66HUWgewLaWc78UyUJ7ngRBil5kHxYAQhuHHFZfQx54t51+WsxtZNYq3aQAAAABJRU5ErkJggg==",
+                                                  "width": "14px",
+                                                  "height": "14px"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "type": "Column",
+                                          "width": "stretch",
+                                          "items": [
+                                              {
+                                                  "type": "TextBlock",
+                                                  "text": "${location}",
+                                                  "horizontalAlignment": "Left",
+                                                  "size": "Small",
+                                                  "isSubtle": true
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "type": "Column",
+                                          "width": "stretch",
+                                          "items": [
+                                              {
+                                                  "type": "Image",
+                                                  "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAlRJREFUOE+tlD9oFEEYxd+33h9GUAxpLIWzs0gjprKwEEIghKAnCSiCQgQLuQOzO1uYWyPhZjbCHRYWwdgoJHhKCIEoWChYKTYpLA8EEayM1e1lvdtP5tiNazgThUyxxSz7e2++eW8JB7TogDjoC/I8LxcEwXkAE8w8bMSI6D2AVSHEa8/zwt0GdoPItu0JInoIoAPgOYAP8UdnAFwEkGHmm77vrwLgBJgGkeM4LoASEdnNZvNJo9HoppWLxeKhQqFwhZl9AHWtdTWB7YCklFPMPMfMU77vfzQA13UHAQzn8/m3nue1Eqht26eJaJmIZpVSy72jm4eU8gQzbxDRveRFDBrudruPstnsyPz8/Ne0u1j4DhGNKqU+90C2bd8ionEhxFha2XXdv4I8zzscBME6M6/5vv/AgMxsnjHzO7ORVt0LlDJwVmt9iSqVytEgCDYsy6oppV78D0hKeSGKorIQYnRfUBRFGwDazNy7QSK6obV+Gc/2N6hcLotcLrdGRCtKqcdpRyaYYRgOEpGV7Ldare+1Wi2IQdeYeTIMw/HesB3HmQUwtLW1Nbm4uPjzX2ozPT2dHRgYWAGwqbWeS0BDJsWWZV2uVqumCvsucxFRFD01addabyaBJCllhZnPbW9vj9fr9R97kUql0rF8Pm/G8UYpddekeyfZtm0fIaIlACejKCouLCw0+8FmZmYKlmU1iOhLu92+moj+Udo4ZArAdWZeN+XNZDI9YKfTKZiyEtEYgCUhhEyHt+9vxHGcUwBuAxgBcDx29g3AKwD3tdafdrv9BZl8JJV0AnfiAAAAAElFTkSuQmCC",
+                                                  "size": "Small",
+                                                  "spacing": "None",
+                                                  "width": "14px",
+                                                  "height": "14px",
+                                                  "horizontalAlignment": "Right"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "type": "Column",
+                                          "width": "auto",
+                                          "items": [
+                                              {
+                                                  "type": "TextBlock",
+                                                  "text": "${startTime}",
+                                                  "isSubtle": true,
+                                                  "size": "Small"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "type": "Column",
+                                          "width": "auto",
+                                          "items": [
+                                              {
+                                                  "type": "Image",
+                                                  "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAHdJREFUKFNjZMACGhoa2H7+/Gnc3t5+goGB4T+yEkZcGr5//97FwMDworOzsxNZE1YNIENAtmDThFMDLk14NWDTxFheXu7PwMDAjc0vMDFGRka2////FzEwMKwgScP///9Xk+4kfE7BFlLUCVZccQByDc6YxpU0ANRxZM1tjj2pAAAAAElFTkSuQmCC",
+                                                  "width": "12px",
+                                                  "height": "12px",
+                                                  "horizontalAlignment": "Center",
+                                                  "spacing": "None"
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "type": "Column",
+                                          "width": "auto",
+                                          "items": [
+                                              {
+                                                  "type": "TextBlock",
+                                                  "text": "${endTime}",
+                                                  "size": "Small",
+                                                  "isSubtle": true
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ],
+                          "width": "stretch"
+                      }
+                  ],
+                  "style": "emphasis",
+                  "spacing": "Small",
+                  "horizontalAlignment": "Left",
+                  "bleed": true,
+                  "separator": true
+              },
+              {
+                  "type": "ColumnSet",
+                  "columns": [
+                      {
+                          "type": "Column",
+                          "items": [
+                              {
+                                  "type": "ActionSet",
+                                  "actions": [
+                                      {
+                                          "type": "Action.OpenUrl",
+                                          "title": "Ver detalles",
+                                          "url": "${url}",
+                                          "style": "positive"
+                                      }
+                                  ],
+                                  "spacing": "Small"
+                              }
+                          ],
+                          "width": "auto",
+                          "separator": true,
+                          "horizontalAlignment": "Center",
+                          "verticalContentAlignment": "Top",
+                          "spacing": "Small"
+                      }
+                  ],
+                  "horizontalAlignment": "Center"
+              }
+          ],
+          "style": "default",
+          "spacing": "Medium",
+          "separator": true
+      }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}
