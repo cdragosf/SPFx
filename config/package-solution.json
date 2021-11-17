@@ -13,7 +13,17 @@
       "privacyUrl": "",
       "termsOfUseUrl": "",
       "mpnId": "Undefined-1.13.0"
-    }
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Directory.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Calendars.Read"
+      }
+    ]
   },
   "paths": {
     "zippedPackage": "solution/spfx-ace.sppkg"

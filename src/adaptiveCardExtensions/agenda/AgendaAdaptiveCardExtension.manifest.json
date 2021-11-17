@@ -17,7 +17,7 @@
   "preconfiguredEntries": [{
     "groupId": "bd067b1e-3ad5-4d5d-a5fe-505f07d7f59c", // Dashboard
     "group": { "default": "Dashboard" },
-    "title": { "default": "agenda" },
+    "title": { "default": "ACE Agenda" },
     "description": { "default": "Adaptive Card Extension para mostrar los eventos de la agenda." },
     "officeFabricIconFontName": "Calendar",
     "properties": {
