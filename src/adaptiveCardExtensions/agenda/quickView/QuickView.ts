@@ -4,18 +4,12 @@ import * as strings from 'AgendaAdaptiveCardExtensionStrings';
 import { IAgendaAdaptiveCardExtensionProps, IAgendaAdaptiveCardExtensionState } from '../AgendaAdaptiveCardExtension';
 
 export interface IQuickViewData {
-  title: string;
   events: IEvent[];
 }
 
-export class QuickView extends BaseAdaptiveCardView<
-  IAgendaAdaptiveCardExtensionProps,
-  IAgendaAdaptiveCardExtensionState,
-  IQuickViewData
-> {
+export class QuickView extends BaseAdaptiveCardView<IAgendaAdaptiveCardExtensionProps, IAgendaAdaptiveCardExtensionState, IQuickViewData> {
   public get data(): IQuickViewData {
     return {
-      title: "test",
       events: this.state.events
     };
   }

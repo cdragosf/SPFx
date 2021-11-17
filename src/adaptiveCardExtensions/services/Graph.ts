@@ -1,7 +1,5 @@
 import { graph } from "@pnp/graph/presets/all";
 import { IEvent } from "../models/IEvent";
-
-
 export class GraphCalendar {
     public async getTodayEvents(): Promise<IEvent[]> {
         let events: IEvent[] = [];
